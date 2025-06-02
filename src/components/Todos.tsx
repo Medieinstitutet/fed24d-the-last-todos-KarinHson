@@ -15,10 +15,16 @@ export const Todos= () => {
         setTodoList(todoList.filter(todo => todo.id !== id));
     };
 
+     const handleToggleDone = (id: number) => {
+        setTodoList(todoList.map(todo => 
+            todo.id === id ? {...todo, isDone: !todo.isDone} : todo
+        ));
+    };
+
     return (
         <div className="todos">
         {todoList.map((t) => (
-            <TodoPresentation key={t.id} todo={t} onDelete={handleDelete}></TodoPresentation>
+            <TodoPresentation key={t.id} todo={t} onDelete={handleDelete} onToggleDone={handleToggleDone}></TodoPresentation>
 
         ))}
         </div>
