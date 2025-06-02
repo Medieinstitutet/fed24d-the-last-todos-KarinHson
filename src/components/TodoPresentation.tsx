@@ -3,9 +3,15 @@ import type { Todo } from "../models/Todo"
 
 type TodoPresentationProps = {
     todo: Todo
+    onDelete: (id: number) => void;
 }
 
-export const TodoPresentation = ({todo}: TodoPresentationProps) => {
+export const TodoPresentation = ({todo, onDelete}: TodoPresentationProps) => {
+
+
+    const deleteTodo = () => {
+        onDelete(todo.id)
+    }
 
     return (
         <div className="todo">
@@ -16,7 +22,7 @@ export const TodoPresentation = ({todo}: TodoPresentationProps) => {
                  <h2>{todo.content}</h2>
             </div>
             <p>Skapades: {todo.created_at.toLocaleString()}</p>
-            <button>Ta bort</button>
+            <button onClick={deleteTodo}>Ta bort</button>
         </div>
     )
 }
