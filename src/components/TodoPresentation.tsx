@@ -19,7 +19,7 @@ export const TodoPresentation = ({todo, onDelete, onToggleDone}: TodoPresentatio
     };
 
     return (
-        <div className={`todo ${todo.isDone ? 'done': ''}`}>
+        <li className={`todo ${todo.isDone ? 'done': ''}`}>
             <div className="done-content">
                 <label> Är färdig:
                 <input type="checkbox" checked={todo.isDone} onChange={toggleDone}/>
@@ -28,6 +28,6 @@ export const TodoPresentation = ({todo, onDelete, onToggleDone}: TodoPresentatio
             </div>
             <p>Skapades: {todo.created_at.toLocaleString()}</p>
             <button onClick={deleteTodo}>Ta bort</button>
-        </div>
+        </li>
     )
 }

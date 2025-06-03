@@ -13,11 +13,11 @@ export const Todos= ({todos, onDelete, onToggleDone}: TodoProps) => {
     
 
     return (
-        <div className="todos">
+        <ul className="todos">
         {todos.map((t) => (
             <TodoPresentation key={t.id} todo={t} onDelete={onDelete} onToggleDone={onToggleDone}></TodoPresentation>
 
         ))}
-        </div>
+        </ul>
     )
 }
