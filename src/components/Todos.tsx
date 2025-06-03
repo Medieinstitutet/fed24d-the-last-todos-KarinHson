@@ -4,8 +4,8 @@ import { TodoPresentation } from "./TodoPresentation"
 
 type TodoProps = {
     todos: Todo[]
-    onDelete: (id: number) => void;
-    onToggleDone: (id: number) => void;
+    onDelete: (id: string) => void;
+    onToggleDone: (id: string) => void;
 }
 
 export const Todos= ({todos, onDelete, onToggleDone}: TodoProps) => {

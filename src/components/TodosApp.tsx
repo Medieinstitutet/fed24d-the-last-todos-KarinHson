@@ -8,17 +8,17 @@ export const TodosApp = () => {
      const [todoList, setTodoList] = useState<Todo[]> (
         JSON.parse(localStorage.getItem("todos") || JSON.stringify(
             [
-            new Todo(1, 'Så plantor', new Date(), false),
-            new Todo(2, 'Vattna plantor', new Date(), false),
-            new Todo(3, 'Rensa ogräs', new Date(), false),
+            new Todo('Så plantor', new Date(), false),
+            new Todo('Vattna plantor', new Date(), false),
+            new Todo('Rensa ogräs', new Date(), false),
         ]
         )))
 
-    const handleDelete = (id: number) => {
+    const handleDelete = (id: string) => {
         setTodoList(todoList.filter(todo => todo.id !== id));
     };
 
-     const handleToggleDone = (id: number) => {
+     const handleToggleDone = (id: string) => {
         setTodoList(todoList.map(todo => 
             todo.id === id ? {...todo, isDone: !todo.isDone} : todo
         ));

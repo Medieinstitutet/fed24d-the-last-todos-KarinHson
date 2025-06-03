@@ -3,8 +3,8 @@ import type { Todo } from "../models/Todo"
 
 type TodoPresentationProps = {
     todo: Todo
-    onDelete: (id: number) => void;
-    onToggleDone: (id: number) => void;
+    onDelete: (id: string) => void;
+    onToggleDone: (id: string) => void;
 }
 
 export const TodoPresentation = ({todo, onDelete, onToggleDone}: TodoPresentationProps) => {
