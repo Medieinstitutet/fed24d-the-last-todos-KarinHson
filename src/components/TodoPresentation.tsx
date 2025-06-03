@@ -26,7 +26,7 @@ export const TodoPresentation = ({todo, onDelete, onToggleDone}: TodoPresentatio
                 </label>
                  <h2>{todo.content}</h2>
             </div>
-            <p>Skapades: {todo.created_at.toLocaleString()}</p>
+            <p>Skapades: {todo.created_at}</p>
             <button onClick={deleteTodo}>Ta bort</button>
         </div>
     )
