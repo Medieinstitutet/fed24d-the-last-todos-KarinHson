@@ -4,7 +4,7 @@ export class Todo {
     created_at: Date;
     isDone: boolean;
 
-    constructor (id: number, content: string, created_at: Date, isDone: boolean) {
+    constructor (id: number, content: string, created_at: Date, isDone: boolean = false) {
         this.id = id; 
         this.content = content;
         this.created_at = created_at;
