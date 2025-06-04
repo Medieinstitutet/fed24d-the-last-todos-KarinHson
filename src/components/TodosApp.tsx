@@ -45,16 +45,15 @@ export const TodosApp = () => {
         <>
         <h1>Todo app!</h1>
         <AddTodo addTodo={addTodo}></AddTodo>
-        <label>Sortera:
-              <select value={sortOrder ?? ""} onChange={(e) => {
+              <select className="ml-6 mb-6 w-[30vw] bg-white text-black border border-gray-300 rounded px-2 py-1 focus:outline-none focus:ring-2 focus:ring-pink-300" value={sortOrder ?? ""} onChange={(e) => {
                const value = e.target.value;
                SetSortOrder(value === "" ? null : value as 'asc' | 'desc');
-               }}>
+               }}
+               aria-label="Sortera">
                 <option value="">Sortera</option>
                 <option value="asc">A-Ö</option>
                 <option value="desc">Ö-A</option>
             </select>
-        </label>
         <Todos todos={sortedTodos} onDelete={handleDelete} onToggleDone={handleToggleDone}></Todos>       
         </>
     )
