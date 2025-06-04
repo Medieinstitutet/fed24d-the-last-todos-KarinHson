@@ -1,6 +1,6 @@
 import { useState, type ChangeEvent, type FormEvent } from "react"
 import { Todo } from "../models/Todo"
-
+import './AddTodo.css'
 
 type AddTodoProps = {
     addTodo: (t: Todo) => void
@@ -23,7 +23,7 @@ export const AddTodo = ({addTodo}: AddTodoProps) => {
         // validera att content inte är tomt
         if (content.trim() === "") return;
 
-        
+
         const newTodo = new Todo(content, new Date());
         addTodo(newTodo);
         setContent("");
@@ -34,7 +34,7 @@ export const AddTodo = ({addTodo}: AddTodoProps) => {
             <label> Vad behövs göras?
                 <input type="text" id="content" value={content} onChange={handleChange}/>
             </label>
-            <button>Lägg till</button>
+            <button className="add-btn">Lägg till</button>
 
         </form>
     )

@@ -2,6 +2,7 @@ import { useState } from "react"
 import { AddTodo } from "./AddTodo"
 import { Todos } from "./Todos"
 import { Todo } from "../models/Todo"
+import './TodosApp.css'
 
 export const TodosApp = () => {
 
@@ -34,6 +35,7 @@ export const TodosApp = () => {
 
     return (
         <>
+        <h1>Todo app!</h1>
         <AddTodo addTodo={addTodo}></AddTodo>
         <Todos todos={todoList} onDelete={handleDelete} onToggleDone={handleToggleDone}></Todos>       
         </>

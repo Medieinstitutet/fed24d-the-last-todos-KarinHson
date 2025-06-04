@@ -1,4 +1,5 @@
 import type { Todo } from "../models/Todo"
+import './TodoPresentation.css';
 
 
 type TodoPresentationProps = {
@@ -21,7 +22,7 @@ export const TodoPresentation = ({todo, onDelete, onToggleDone}: TodoPresentatio
     return (
         <li className={`todo ${todo.isDone ? 'done': ''}`}>
             <div className="done-content">
-                <label> Är färdig:
+                <label> Klar?
                 <input type="checkbox" checked={todo.isDone} onChange={toggleDone}/>
                 </label>
                  <h2>{todo.content}</h2>

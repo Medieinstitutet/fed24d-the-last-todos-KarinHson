@@ -1,6 +1,6 @@
 import { Todo } from "../models/Todo"
 import { TodoPresentation } from "./TodoPresentation"
-
+import './Todos.css'
 
 type TodoProps = {
     todos: Todo[]
