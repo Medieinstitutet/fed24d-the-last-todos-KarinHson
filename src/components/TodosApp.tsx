@@ -15,6 +15,8 @@ export const TodosApp = () => {
         ]
         )))
 
+    const [sortOrder, SetSortOrder] = useState<'asc' | 'desc' | null>(null)
+
     const handleDelete = (id: string) => {
         setTodoList(todoList.filter(todo => todo.id !== id));
     };
@@ -33,11 +35,27 @@ export const TodosApp = () => {
         setTodoList([...todoList, t])
     }
 
+    const sortedTodos = sortOrder ? [...todoList].sort((a, b) =>
+    sortOrder === 'asc'
+    ? a.content.localeCompare(b.content)
+    : b.content.localeCompare(a.content)
+    ) : todoList;
+
     return (
         <>
         <h1>Todo app!</h1>
         <AddTodo addTodo={addTodo}></AddTodo>
-        <Todos todos={todoList} onDelete={handleDelete} onToggleDone={handleToggleDone}></Todos>       
+        <label>Sortera:
+              <select value={sortOrder ?? ""} onChange={(e) => {
+               const value = e.target.value;
+               SetSortOrder(value === "" ? null : value as 'asc' | 'desc');
+               }}>
+                <option value="">Sortera</option>
+                <option value="asc">A-Ö</option>
+                <option value="desc">Ö-A</option>
+            </select>
+        </label>
+        <Todos todos={sortedTodos} onDelete={handleDelete} onToggleDone={handleToggleDone}></Todos>       
         </>
     )
 }
