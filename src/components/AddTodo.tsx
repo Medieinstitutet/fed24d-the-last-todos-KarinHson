@@ -30,11 +30,11 @@ export const AddTodo = ({addTodo}: AddTodoProps) => {
     }
 
     return (
-        <form onSubmit={handleSubmit}>
-            <label> Vad behövs göras?
-                <input type="text" id="content" value={content} onChange={handleChange}/>
+        <form className="flex flex-col gap-3" onSubmit={handleSubmit}>
+            <label className="text-xl flex flex-col items-center"> Vad behövs göras?
+                <input type="text" id="content" value={content} onChange={handleChange} className="bg-white text-black border border-gray-300 rounded px-2 py-1 focus:outline-none focus:ring-2 focus:ring-pink-300"/>
             </label>
-            <button className="add-btn">Lägg till</button>
+            <button className=" bg-pink-300 hover:bg-pink-400 text-white  px-4 py-2 rounded self-center">Lägg till</button>
 
         </form>
     )
