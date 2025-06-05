@@ -8,20 +8,16 @@ type AddTodoProps = {
 export const AddTodo = ({addTodo}: AddTodoProps) => {
 
     const [content, setContent] = useState("");
-    // const [todo, setTodo] = useState<Todo>(new Todo("", new Date(), false))
 
     const handleChange = (e: ChangeEvent <HTMLInputElement>) => {
         setContent(e.target.value);
-
-        // setTodo({...todo, [e.target.id]: e.target.value});
     }
 
     const handleSubmit = (e: FormEvent) => {
         e.preventDefault();
 
-        // validera att content inte är tomt
+        // make sure the input is not empty
         if (content.trim() === "") return;
-
 
         const newTodo = new Todo(content, new Date());
         addTodo(newTodo);
