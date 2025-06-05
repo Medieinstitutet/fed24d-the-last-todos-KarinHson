@@ -1,5 +1,4 @@
 import type { Todo } from "../models/Todo"
-import './TodoPresentation.css';
 
 
 type TodoPresentationProps = {

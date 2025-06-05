@@ -2,7 +2,6 @@ import { useState } from "react"
 import { AddTodo } from "./AddTodo"
 import { Todos } from "./Todos"
 import { Todo } from "../models/Todo"
-import './TodosApp.css'
 
 export const TodosApp = () => {
 
@@ -43,7 +42,7 @@ export const TodosApp = () => {
 
     return (
         <>
-        <h1>Todo app!</h1>
+        <h1 className="flex justify-center text-4xl sm:text-5xl md:text-6xl">Todo app!</h1>
         <AddTodo addTodo={addTodo}></AddTodo>
               <select className="ml-6 mb-6 w-[30vw] bg-white text-black border border-gray-300 rounded px-2 py-1 focus:outline-none focus:ring-2 focus:ring-pink-300" value={sortOrder ?? ""} onChange={(e) => {
                const value = e.target.value;

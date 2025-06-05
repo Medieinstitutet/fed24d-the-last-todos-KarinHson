@@ -1,6 +1,5 @@
 import { useState, type ChangeEvent, type FormEvent } from "react"
 import { Todo } from "../models/Todo"
-import './AddTodo.css'
 
 type AddTodoProps = {
     addTodo: (t: Todo) => void

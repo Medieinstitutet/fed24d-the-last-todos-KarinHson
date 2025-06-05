@@ -1,6 +1,5 @@
 import { Todo } from "../models/Todo"
 import { TodoPresentation } from "./TodoPresentation"
-import './Todos.css'
 
 type TodoProps = {
     todos: Todo[]
@@ -9,8 +8,6 @@ type TodoProps = {
 }
 
 export const Todos= ({todos, onDelete, onToggleDone}: TodoProps) => {
-
-    
 
     return (
         <ul className="flex flex-wrap gap-8 justify-center px-4 sm:px-0">
