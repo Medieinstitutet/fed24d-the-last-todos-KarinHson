@@ -30,7 +30,7 @@ export const AddTodo = ({addTodo}: AddTodoProps) => {
 
     return (
         <form className="flex flex-col gap-3" onSubmit={handleSubmit}>
-            <label className="text-xl flex flex-col items-center"> Vad behövs göras?
+            <label className="mt-4 text-xl flex flex-col items-center"> Vad behövs göras?
                 <input type="text" id="content" value={content} onChange={handleChange} className="bg-white text-black border border-gray-300 rounded px-2 py-1 focus:outline-none focus:ring-2 focus:ring-pink-300"/>
             </label>
             <button className=" bg-pink-300 hover:bg-pink-400 text-white  px-4 py-2 rounded self-center">Lägg till</button>

@@ -44,7 +44,10 @@ export const TodosApp = () => {
         <>
         <h1 className="flex justify-center text-4xl sm:text-5xl md:text-6xl">Todo app!</h1>
         <AddTodo addTodo={addTodo}></AddTodo>
-              <select className="ml-6 mb-6 w-[30vw] bg-white text-black border border-gray-300 rounded px-2 py-1 focus:outline-none focus:ring-2 focus:ring-pink-300" value={sortOrder ?? ""} onChange={(e) => {
+        <section className="flex justify-center mt-4">
+              <select className="mb-4 bg-white text-black border border-gray-300 rounded px-2 py-1
+               focus:outline-none focus:ring-2 focus:ring-pink-300
+               w-full max-w-xs" value={sortOrder ?? ""} onChange={(e) => {
                const value = e.target.value;
                SetSortOrder(value === "" ? null : value as 'asc' | 'desc');
                }}
@@ -53,6 +56,7 @@ export const TodosApp = () => {
                 <option value="asc">A-Ö</option>
                 <option value="desc">Ö-A</option>
             </select>
+        </section>
         <Todos todos={sortedTodos} onDelete={handleDelete} onToggleDone={handleToggleDone}></Todos>       
         </>
     )
