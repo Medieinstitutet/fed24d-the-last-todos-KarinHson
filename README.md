@@ -1,4 +1,4 @@
-# Title
+# ✅ Todo App! 
 
 ## 🗺️ Description
 
@@ -40,8 +40,11 @@ The project is built with React and TypeScript and uses functional components an
 
 Here are some screenshots from the site:
 
-![Example](/example.jpg)
+![Bigger screen size](https://github.com/user-attachments/assets/8e1da750-f920-4588-9c46-a791b7901cdd)
 
+![Mobile screen size](https://github.com/user-attachments/assets/bce7f85d-50a9-47b8-a9ab-7cdfd6e3f218)
+
+![Todos marked as done](https://github.com/user-attachments/assets/62985f08-bb6b-435e-96b2-729441030677)
 
 
 ## 🍎 Lessons learned
@@ -54,10 +57,10 @@ Here are some screenshots from the site:
 
 ## 🔗 Live Version & Repository Link
 
-You can view the live version of this project [here](______). 
+You can view the live version of this project [here](https://medieinstitutet.github.io/fed24d-the-last-todos-KarinHson/). 
 
 Repository link:
-____
+https://github.com/Medieinstitutet/fed24d-the-last-todos-KarinHson
 
 
 ## 💻 Usage
@@ -82,13 +85,6 @@ npm install
 npm run dev
 ```
 
-
-## 🔍 Validation and Lighthouse Analysis
-
-
-W3C Validation: All HTML and CSS have been validated using the W3C Validator. The site adheres to web standards, ensuring compatibility and performance.
-
-Lighthouse Analysis: The website has been tested with Lighthouse to ensure high-quality performance, accessibility, and SEO. (Screenshots of the validation reports and Lighthouse scores are included below.)
 
 
 ## 🤝Credits
