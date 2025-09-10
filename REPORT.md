@@ -1,56 +1,111 @@
 # 📌 Rättningsrapport – fed24d-the-last-todos-KarinHson
 
 ## 🎯 Uppgiftens Krav:
-# Inlämningsuppgift Todo
+# ✅ Todo App! 
 
-I denna inlämningsuppgift kommer ni att skapa er egen todo-lista i en react-applikation.
-Sidan skall visa ett antal punkter som skall göras. Dessa skall då komma upp på skärmen i form av en lista. När uppgiften är slutförd skall användaren kunna markera uppgiften som slutförd och uppgiften skall då tas bort från listan.
+## 🗺️ Description
 
-## Betyg G
+This is a simple and user-friendly Todo App that allows users to manage their daily tasks. Users can add, sort, mark as done, and delete todos. The application stores todos in localStorage to persist data between sessions.
 
-- Skapa en hårdkodad lista med punkter att göra (hitta på egna punkter, dessa skall inte bara vara en text)
-- Presentera listan på skärmen, helst med lite kontroll. Detta betyder i en html-struktur t.ex. i en ul/li-lista
-- Implementera klickhändelse för att hantera borttagandet av en todo.
-- Todo markeras som klar/tas bort från skärmen och markeras som klar i javascript-listan.
+## 🗝️ Project Features
+This website includes several key features:
 
-## Betyg VG
+- Add new todos  
+- Mark todos as done/undone  
+- Delete individual todos  
+- Sort todos A–Ö or Ö–A  
+- Stores todos in localStorage for persistence  
 
-- Alla punkter under G
-- Kunna visa även klara händelser och klicka tillbaka den så att de blir oklara igen.
-- Skapa ett formulär som tillåter att en användare skapar nya todos efterhand.
-- Använda lifting state up för att dela upp dina komponenter bättre.
-- Kunna sortera ordningen på dina todos.
-- Implementera ett valfritt grafiskt ramverk till din todolista, t.ex. material ui eller tailwind.
-- Egen css får gärna skrivas och då skall ni ha en bra struktur och använda flex eller grid på ett bra sätt.
+## 🔭 Project Overview
 
-## Allmänt
+The project is built with React and TypeScript and uses functional components and hooks such as `useState` to manage application state. Todos are rendered dynamically and sorted based on user selection. A clean and colorful UI enhances the user experience.
 
-Projektet ni har är ett vite-projekt. D.v.s. ni måste köra:
+## ✅ Responsiveness and Accessibility
 
-```shell
-npm i
+- Fully responsive design using Tailwind CSS  
+- Works well across devices and screen sizes  
+- Semantic HTML elements like `section`, `ul`, and `button` are used to improve accessibility  
+- Keyboard-friendly interactions  
+
+## 👩🏻‍💻 Tech Stack
+
+[![HTML](https://img.shields.io/badge/HTML-%23E34F26.svg?logo=html5&logoColor=white)](#)
+![TypeScript](https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white)
+[![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)](#)
+![Vite](https://img.shields.io/badge/vite-%23646CFF.svg?style=for-the-badge&logo=vite&logoColor=white)
+![NPM](https://img.shields.io/badge/NPM-%23CB3837.svg?style=for-the-badge&logo=npm&logoColor=white)
+![Visual Studio Code](https://img.shields.io/badge/Visual%20Studio%20Code-0078d7.svg?style=for-the-badge&logo=visual-studio-code&logoColor=white)
+![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)
+
+
+
+## 📸 Site Screenshots
+
+Here are some screenshots from the site:
+
+![Bigger screen size](https://github.com/user-attachments/assets/8e1da750-f920-4588-9c46-a791b7901cdd)
+
+![Mobile screen size](https://github.com/user-attachments/assets/bce7f85d-50a9-47b8-a9ab-7cdfd6e3f218)
+
+![Todos marked as done](https://github.com/user-attachments/assets/62985f08-bb6b-435e-96b2-729441030677)
+
+
+## 🍎 Lessons learned
+
+- Using localStorage with React to persist state  
+- Managing dynamic lists with unique keys and states  
+- Working with TypeScript types in component props  
+- Styling with Tailwind for responsive design  
+- Importance of semantic HTML for accessibility  
+
+## 🔗 Live Version & Repository Link
+
+You can view the live version of this project [here](https://medieinstitutet.github.io/fed24d-the-last-todos-KarinHson/). 
+
+Repository link:
+https://github.com/Medieinstitutet/fed24d-the-last-todos-KarinHson
+
+
+## 💻 Usage
+
+- Add a task by typing into the input field and clicking "Lägg till"  
+- Sort tasks alphabetically using the dropdown menu  
+- Toggle tasks as done/undone by clicking the checkbox  
+- Remove tasks by clicking "Ta bort"  
+
+
+## 🚀 Installation
+
+1. Install the project locally with ___
+
+```bash
+npm install
 ```
 
-och
+2. Run the project
 
-```shell
-npm run dev 
+```bash
+npm run dev
 ```
 
-för att köra projektet.
 
-- Det finns många sätt att lösa denna uppgift på. Om ni känner er osäkra på någonting, fråga hellre någon gång för mycket så att ni känner er säkra på vad ni utvecklar.
-- Ni får gärna ändra strukturen i projektet, detta är bara en grund.
-- Börja med att planera ert arbete, börja inte med Visual Studio Code, även om det är lockande.
-- Gör ert bästa att inte stressa. Lättare sagt än gjort, jag vet. Men ingen mår bättre av att stressa.
-- Ha roligt, skratta när det blir fel och fortsätt att vara nyfiken :)
+
+## 🤝Credits
+
+Special thanks to my teacher Sebastian Tegel and classmates for their feedback and support throughout the project.
+
+## 📝 Author
+
+Karin Henriksson – Project lead and developer
+[@KarinHson](https://github.com/KarinHson)
+
 
 
 ## 🔍 ESLint-varningar:
 
 
 ## 🏆 **Betyg: VG**
-📌 **Motivering:** Koden uppfyller alla krav för både G och VG. Todo-listan är välstrukturerad och välimplementerad med en mängd avancerade funktioner som att kunna se och växla mellan slutförda och oavklarade händelser, lägga till nya todos, och sortera listan. State management är korrekt hanterad och delade komponenter med hjälp av lifting state up. Grafiskt ramverk som tailwindcss används effektivt och det finns en tydlig struktur av CSS-klasser. Felhantering och kodstruktur är överlag bra.
+📌 **Motivering:** The student has implemented a Todo application that meets all the specified requirements comprehensively. The codebase follows best practices with TypeScript and React, demonstrating a good understanding of component structure, state management with hooks, and type safety with TypeScript. The UI is styled using Tailwind CSS, enhancing the responsiveness and aesthetic of the application. Accessibility considerations are present through semantic HTML elements and ARIA labels. Data persistence is effectively handled with localStorage, ensuring that todos are retained between sessions.
 
 💡 **Förbättringsförslag:**  
-Det finns dock små förbättringsområden. För att förbättra kodläsbarhet och underhåll kan kommentarer läggas till för att förklara mer komplexa delar, särskilt de avsedda för nybörjare att förstå snabbt. Dessutom, för att göra applikationen mer responsiv och få en bättre användarupplevelse, kan funktionalitet läggas till för att bekräfta borttagning av en todo. Tänk också på att överväga ytterligare felhantering, till exempel, att varna användaren om de försöker lägga till en tom todo.
+To further improve the application, consider the following suggestions: 1) Implement unit testing, especially for the core functionalities (such as adding, deleting, and marking todos), to ensure reliability. 2) Optimize the localStorage update strategy to minimize potentially redundant writes, perhaps by using a useEffect hook to update localStorage only when todoList changes. 3) Improve error handling for edge cases such as failures during localStorage parsing. 4) Consider adding animations for UI interactions like adding or removing todos for enhanced user experience.
